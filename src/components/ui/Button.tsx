@@ -22,7 +22,7 @@ const Button: React.FC<ButtonProps> = ({
         type="submit"
         disabled={loader}
         className={cn(
-          " fill w-full py-3 px-2 border-none flex justify-center items-center font-inter rounded-[40px] bg-gradient-to-tr from-[#154454] to-[#000000] text-[16px] font-bold leading-[25.5px] text-[#FFFFFF]",
+          " fill w-full py-3 px-2  flex justify-center items-center font-inter rounded-[40px] border border-[#FFFFFF] bg-gradient-to-tr from-[#154454] to-[#000000] text-[16px] font-bold leading-[25.5px] text-[#FFFFFF]",
           className
         )}
       >

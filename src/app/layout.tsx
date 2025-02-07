@@ -30,7 +30,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${bebasNeue.variable}`}>
+      <body className={`${inter.variable} ${bebasNeue.variable} bg-[#0d212e]`}>
         {children}
       </body>
     </html>
