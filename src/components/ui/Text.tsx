@@ -21,7 +21,7 @@ const Text = forwardRef<HTMLHeadingElement | HTMLParagraphElement, Props>(
         <h1
           ref={ref}
           className={cn(
-            "font-bold text-[70px] leading-[59px] text-white font-inter",
+            "font-semibold text-[70px] leading-[88px] text-white font-inter",
             className
           )}
           onClick={onClick}
