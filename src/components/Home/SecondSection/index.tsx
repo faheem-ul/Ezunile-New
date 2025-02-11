@@ -18,11 +18,11 @@ const SecondSection = () => {
         <div className="flex-col  max-w-[310px]">
           <Text
             as="h1"
-            className="font-bebasNeue text-[50px] text-center bg-gradient-to-b from-[#3284B6] to-[#163A50] bg-clip-text text-transparent"
+            className="font-bebasNeue font-semibold text-[50px] text-center bg-gradient-to-b from-[#3284B6] to-[#163A50] bg-clip-text text-transparent leading-[48px] tracking-[2px]"
           >
             GALVANIZING
           </Text>
-          <Text className="text-[16px] text-center">
+          <Text className="text-[16px] text-center mt-3">
             of the planet is covered in water — but only 3% of that is
             freshwater
           </Text>
@@ -30,11 +30,11 @@ const SecondSection = () => {
         <div className="flex-col  max-w-[330px]">
           <Text
             as="h1"
-            className="font-bebasNeue text-[50px] text-center bg-gradient-to-b from-[#3284B6] to-[#163A50] bg-clip-text text-transparent"
+            className="font-bebasNeue text-[50px] text-center bg-gradient-to-b from-[#3284B6] to-[#163A50] bg-clip-text text-transparent leading-[48px] tracking-[2px]"
           >
             CULTIVATING
           </Text>
-          <Text className="text-[16px] text-center">
+          <Text className="text-[16px] text-center mt-3">
             engaging, equipping and upskilling people so they can realize their
             fullest potential
           </Text>
@@ -42,11 +42,11 @@ const SecondSection = () => {
         <div className="flex-col  max-w-[310px]">
           <Text
             as="h1"
-            className="font-bebasNeue text-[50px] text-center bg-gradient-to-b from-[#3284B6] to-[#163A50] bg-clip-text text-transparent"
+            className="font-bebasNeue text-[50px] text-center bg-gradient-to-b from-[#3284B6] to-[#163A50] bg-clip-text text-transparent  leading-[48px] tracking-[2px]"
           >
             BRIDGING GENERATION GAPS
           </Text>
-          <Text className="text-[16px] text-center">
+          <Text className="text-[16px] text-center mt-3">
             breaking down communication barriers, creating inclusive
             environments
           </Text>
@@ -54,11 +54,11 @@ const SecondSection = () => {
         <div className="flex-col  max-w-[311px] mt-6">
           <Text
             as="h1"
-            className="font-bebasNeue text-[50px] text-center bg-gradient-to-b from-[#3284B6] to-[#163A50] bg-clip-text text-transparent"
+            className="font-bebasNeue text-[50px] text-center bg-gradient-to-b from-[#3284B6] to-[#163A50] bg-clip-text text-transparent leading-[48px] tracking-[2px]"
           >
             INNOVATING
           </Text>
-          <Text className="text-[16px] text-center">
+          <Text className="text-[16px] text-center mt-3">
             revitalizing, imbedding new life and vitality into existing business
             models, frameworks and processes; setting new standards of
             excellence
