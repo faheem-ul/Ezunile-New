@@ -73,7 +73,7 @@ const EzeBurts = () => {
                 that covers nearly 70% of the planet.{" "}
               </Text>
 
-              <div className="flex flex-wrap justify-between gap-5 mt-8">
+              <div className="flex xl:flex-wrap  justify-between gap-5 mt-8">
                 <Button className="max-w-[206px] mob:max-w-full">
                   Follow Eze
                 </Button>
