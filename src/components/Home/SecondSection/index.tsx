@@ -6,7 +6,7 @@ import Text from "@/components/ui/Text";
 
 const SecondSection = () => {
   return (
-    <div className="relative min-h-[430px] flex justify-center items-center overflow-hidden ">
+    <div className="relative min-h-[430px] flex justify-center items-center overflow-hidden tab:py-20 ">
       <Image
         className="absolute object-cover object-center w-full h-full"
         src={bg}
