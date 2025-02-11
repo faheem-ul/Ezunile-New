@@ -20,7 +20,7 @@ const EzeBurts = () => {
           height={1138}
         />
 
-        <div className="absolute object-cover object-center w-full h-full bg-black/40">
+        <div className="absolute object-cover object-center w-full h-full bg-black/60">
           {" "}
         </div>
         <div className="w-full max-w-[1290px] relative z-10 mt-[250px] mb-[140px]  mob:pt-10    mob:mt-36 mx-auto px-5">
