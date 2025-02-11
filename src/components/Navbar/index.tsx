@@ -109,31 +109,32 @@ const Navbar = () => {
                           About Us
                         </Text>
                       </Link>
+                      <a
+                        href="/professional-experience"
+                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      >
+                        <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                          Professional Experience
+                        </Text>
+                      </a>
+                      <a
+                        href="/boards-and-advisory-committees"
+                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      >
+                        <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                          Board and Advisory Comittees
+                        </Text>
+                      </a>
+
                       {/* <a
-                        href=""
-                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                      >
-                        <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Capabilities
-                        </Text>
-                      </a>
-                      <a
-                        href=""
-                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                      >
-                        <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Contacts
-                        </Text>
-                      </a>
-                      <a
                         href=""
                         className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                           Join
                         </Text>
-                      </a>
-                      <a
+                      </a> */}
+                      {/* <a
                         href=""
                         className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
                       >
