@@ -33,14 +33,16 @@ const EzeBurts = () => {
 
           {/*  */}
           <div className="border border-[#00A7E1] rounded-[15px] p-[40px] tab:p-[20px] flex tab:flex-wrap gap-[46px]">
-            <Image
-              className="max-w-[500px] tab:w-full"
+           <div className="w-full max-w-[800px]">
+           <Image
+              className=" w-full h-full object-cover rounded-[12px] tab:w-full"
               src={ezebutrs}
               alt="ezebutrs"
             />
+           </div>
 
             {/*right  */}
-            <div className=" space-y-[22px]">
+            <div className=" space-y-[22px] max-w-[628px]">
               <Text className="text-[54px] tab:text-[32px] text-[#FFFFFF] font-normal leading-[120%]">
                 By 2040, there will be a worldwide freshwater shortage affecting
                 the entire human race. 
