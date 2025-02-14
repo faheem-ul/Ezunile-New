@@ -1,11 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import Text from "@/components/ui/Text";
 
 import bg from "@/public/images/home/herobg.png";
 import ezebutrs from "@/public/images/about/ezeburts.png";
 import circle from "@/public/circleblue.svg";
+import Button from "@/components/ui/Button";
 
 const EzeSpoken = () => {
   return (
@@ -45,12 +47,19 @@ const EzeSpoken = () => {
           >
             <div className="flex tab:flex-wrap gap-[46px]">
               {/* left */}
-              <div className="w-full max-w-[800px]">
+              <div className="w-full max-w-[800px] relative">
                 <Image
                   className=" w-full h-full object-cover rounded-[12px] tab:w-full"
                   src={ezebutrs}
                   alt="ezebutrs"
                 />
+                <Link
+                  href="https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fezun.innovativedemo.online%2Fwp-content%2Fuploads%2F2022%2F10%2FBio_Eze-Burts_Sept-2022.docx&wdOrigin=BROWSELINK"
+                  className="absolute left-4 bottom-4 w-full max-w-[150px]"
+                  target="_blank" // Opens in a new tab
+                >
+                  <Button className="">Full Bio</Button>
+                </Link>
               </div>
 
               {/*right  */}

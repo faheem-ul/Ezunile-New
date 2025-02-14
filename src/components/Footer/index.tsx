@@ -5,9 +5,9 @@ import Link from "next/link";
 import location from "@/public/icons/location.svg";
 import mail from "@/public/icons/mail.svg";
 import linkedine from "@/public/icons/mdi_linkedin.svg";
-import fb from "@/public/icons/fe_facebook.svg";
-import insta from "@/public/icons/ri_instagram-fill.svg";
-import eblogo from "@/public/images/home/eb white 1.png";
+// import fb from "@/public/icons/fe_facebook.svg";
+// import insta from "@/public/icons/ri_instagram-fill.svg";
+// import eblogo from "@/public/images/home/eb white 1.png";
 
 import Text from "../ui/Text";
 
@@ -42,8 +42,26 @@ const Footer = () => {
         </div>
 
         {/*  */}
-        <div className="">
-          <Image src={eblogo} alt="eblogo" width={219} height={180} />
+        <div className="mob:w-full mob:flex mob:justify-center">
+          {/* <Image src={eblogo} alt="eblogo" width={219} height={180} /> */}
+          <Link
+              href="/"
+              className=" mob:max-w-[182px]   group pt-6 mob:mx-auto" 
+            >
+              <Text className="relative inline-block text-[64px] font-light">
+                E
+                <span className="absolute left-[-30%] opacity-0 transition-all duration-500 ease-in-out group-hover:left-[36px] group-hover:opacity-100">
+                  ze
+                </span>
+              </Text>
+              <br />
+              <Text className="relative inline-block text-[64px] font-light mt-[-39px]">
+                B
+                <span className="absolute left-[-30%] opacity-0 transition-all duration-500 ease-in-out group-hover:left-[38px] group-hover:opacity-100">
+                  urts
+                </span>
+              </Text>
+            </Link>
         </div>
 
         {/*  */}
@@ -61,7 +79,7 @@ const Footer = () => {
             />
           </Link>
 
-          <Image
+          {/* <Image
             className="cursor-pointer"
             src={fb}
             alt="fb"
@@ -74,12 +92,12 @@ const Footer = () => {
             alt="insta"
             width={38.05}
             height={38.05}
-          />
+          /> */}
         </div>
       </div>
-      <hr className="max-w-[1290px] border border-[#D9D9D9]/60 w-full my-5 mx-auto" />
+      <hr className="max-w-[1290px] border border-[#D9D9D9]/60 w-full mb-5 mt-7 mx-auto" />
       <Text className="text-center text-[#838383] text-[13px] font-normal">
-        Copyright © EzuNile Industries 2024. All rights reserved.
+        Copyright © EzuNile Industries 2025. All rights reserved.
       </Text>
     </div>
   );
