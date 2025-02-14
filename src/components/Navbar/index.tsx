@@ -126,7 +126,7 @@ const Navbar = () => {
                         </Text>
                       </a>
                       <a
-                        href="/contactus"
+                        href="/leadership-growth-professional-solutions"
                         className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">

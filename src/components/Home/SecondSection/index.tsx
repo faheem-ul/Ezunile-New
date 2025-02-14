@@ -23,8 +23,9 @@ const SecondSection = () => {
             GALVANIZING
           </Text>
           <Text className="text-[16px] text-center mt-3">
-            of the planet is covered in water — but only 3% of that is
-            freshwater
+            {/* of the planet is covered in water — but only 3% of that is
+            freshwater */}
+            inspiring people to action
           </Text>
         </div>
         <div className="flex-col  max-w-[330px]">

@@ -38,9 +38,10 @@ const BioAboutMe = () => {
           </div>
           <div className="border-l-[1px] tab:border-l-0 mob:border-t-[1px] border-[#00A7E1] max-w-[395px] w-full">
             <div className="py-20 px-10 tab:px-5">
-              <Text className="text-[20px] max-w-[595px]">Initiatives</Text>
+             <Link href="/professional-experience"> <Text className="text-[20px] max-w-[595px]">Initiatives</Text></Link>
               <hr className="border border-[#00A7E1] w-[133px] mt-4" />
-              <Text className="text-[20px] max-w-[595px] mt-10">Bio</Text>
+             
+              <Link href="/bio"> <Text className="text-[20px] max-w-[595px] mt-10">Bio</Text></Link>
               <hr className="border border-[#00A7E1] w-[133px] mt-4" />
             </div>
           </div>

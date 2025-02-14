@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import location from "@/public/icons/location.svg";
 import mail from "@/public/icons/mail.svg";
@@ -26,7 +27,12 @@ const Footer = () => {
           </div>
           <div className="flex gap-[8px] items-start">
             <Image src={mail} alt="mail" width={24} height={24} />
-            <Text className="text-[15px] font-medium">contact@ezunile.io</Text>
+
+            <Link href="mailto:contact@ezunile.io">
+              <Text className="text-[15px] font-medium">
+                contact@ezunile.io
+              </Text>
+            </Link>
           </div>
         </div>
 
@@ -37,13 +43,19 @@ const Footer = () => {
 
         {/*  */}
         <div className="flex gap-[21px]">
-          <Image
-            className="cursor-pointer"
-            src={linkedine}
-            alt="linkdin"
-            width={41.22}
-            height={41.22}
-          />
+          <Link
+            className="w-[41px]"
+            href="https://www.linkedin.com/in/ezunial-eze-burts-iii-3281b7b0/"
+          >
+            <Image
+              className="cursor-pointer"
+              src={linkedine}
+              alt="linkdin"
+              width={41.22}
+              height={41.22}
+            />
+          </Link>
+
           <Image
             className="cursor-pointer"
             src={fb}
