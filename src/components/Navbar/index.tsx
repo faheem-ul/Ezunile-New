@@ -7,7 +7,7 @@ import { gsap } from "gsap";
 
 import Drawer from "../ui/Drawer";
 
-import logo from "@/public/eb logo.png";
+// import logo from "@/public/eb logo.png";
 import { cn } from "@/lib/utils/twMerge";
 
 import togglesvg from "@/public/icons/toggle.svg";
@@ -48,15 +48,23 @@ const Navbar = () => {
           <div className="flex justify-between items-center w-full ">
             <Link
               href="/"
-              className="flex mob:max-w-[182px] mob:justify-start space-x-3 rtl:space-x-reverse"
+              className=" mob:max-w-[182px]   group pt-6" // Added group class here
             >
-              <Image
-                src={logo}
-                alt="Flowbite Logo"
-                width={120}
-                height={151}
-                className=""
-              />
+              {/* First Text (E with ze) */}
+              <Text className="relative inline-block text-[40px]">
+                E
+                <span className="absolute left-[-30%] opacity-0 transition-all duration-500 ease-in-out group-hover:left-[22px] group-hover:opacity-100">
+                  ze
+                </span>
+              </Text>
+              <br />
+              {/* Second Text (B with urts) */}
+              <Text className="relative inline-block text-[40px] mt-[-23px]">
+                B
+                <span className="absolute left-[-30%] opacity-0 transition-all duration-500 ease-in-out group-hover:left-[26px] group-hover:opacity-100">
+                  urts
+                </span>
+              </Text>
             </Link>
 
             <div className="flex xl:pr-4 xl:hidden  ">
@@ -102,11 +110,11 @@ const Navbar = () => {
                         </Text>
                       </Link>
                       <Link
-                        href="/about"
+                        href="/bio"
                         className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          About Us
+                          Bio
                         </Text>
                       </Link>
                       <a
@@ -114,7 +122,7 @@ const Navbar = () => {
                         className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Professional Experience
+                          Professional Experience and Industry Expertise
                         </Text>
                       </a>
                       <a
@@ -122,7 +130,15 @@ const Navbar = () => {
                         className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Board and Advisory Comittees
+                          Boards and Advisory Committees
+                        </Text>
+                      </a>
+                      <a
+                        href="/leadership-growth-professional-solutions"
+                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      >
+                        <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                          Leadership Growth & Professional Solutions
                         </Text>
                       </a>
 

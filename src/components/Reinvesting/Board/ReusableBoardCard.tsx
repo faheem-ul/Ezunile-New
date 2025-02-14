@@ -20,9 +20,9 @@ const CommunityCard: React.FC<CommunityCardProps> = ({
   isLast,
 }) => {
   return (
-    <div className="flex gap-[40px] mob:gap-7">
+    <div className="flex gap-[40px] mob:gap-7 min-h-screen">
       {/* Left Section with Border and Icons */}
-      <div className="flex flex-col items-center">
+      <div className=" flex-col items-center hidden mob:block">
         <Image src={borderIcon} alt="Bottom icon" width={34} height={34} />
         {!isLast && ( // Hide the line for the last item
           <div className="border border-[#21587A] flex-grow"></div>

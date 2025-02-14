@@ -20,7 +20,11 @@ const ProfessionalHero = () => {
       <div className="absolute object-cover object-center w-full h-full bg-gradient-to-l from-[#0D1723]/90 to-[#0D1723]/70">
         {" "}
       </div>
-      <div className="w-full max-w-[1290px] relative z-10 mt-20 mob:pt-10 xl:pl-5 mob:pl-0 mob:mt-[80px]">
+      <div className="w-full max-w-[1290px] relative z-10 mt-20 mob:pt-10 xl:pl-5 mob:pl-0 mob:mt-[80px]"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-easing="ease-in-out"
+      >
         <Text
           as="h1"
           className="text-[72px] text-center mob:text-[48px] leading-[88px] mob:leading-[120%] mob:px-5"

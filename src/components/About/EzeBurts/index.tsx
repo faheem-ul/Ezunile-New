@@ -7,6 +7,7 @@ import Button from "@/components/ui/Button";
 import bg from "@/public/images/home/herobg.png";
 import ezebutrs from "@/public/images/about/ezeburts.png";
 import design from "@/public/images/about/designbg.png";
+import Link from "next/link";
 
 const EzeBurts = () => {
   return (
@@ -23,24 +24,37 @@ const EzeBurts = () => {
         <div className="absolute object-cover object-center w-full h-full bg-black/60">
           {" "}
         </div>
-        <div className="w-full max-w-[1290px] relative z-10 mt-[250px] mb-[140px]  mob:pt-10    mob:mt-36 mx-auto px-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          // data-aos-delay="600"
+          data-aos-easing="ease-in-out"
+        className="w-full max-w-[1290px] relative z-10 mt-[250px] mb-[140px]  mob:pt-10    mob:mt-36 mx-auto px-5">
           <Text
             as="h1"
+          
             className=" text-[72px] text-center  mob:text-[48px] leading-[88px] mob:leading-[120%] mob:px-5 mb-20"
           >
             About Eze Burts III
           </Text>
 
           {/*  */}
-          <div className="border border-[#00A7E1] rounded-[15px] p-[40px] tab:p-[20px] flex tab:flex-wrap gap-[46px]">
-            <Image
-              className="max-w-[500px] tab:w-full"
-              src={ezebutrs}
-              alt="ezebutrs"
-            />
+          <div 
+            data-aos="fade-up"
+            data-aos-duration="900"
+            // data-aos-delay="600"
+            data-aos-easing="ease-in-out"
+          className="border border-[#00A7E1] rounded-[15px] p-[40px] tab:p-[20px] flex tab:flex-wrap gap-[46px]">
+            <div className="w-full max-w-[800px]">
+              <Image
+                className=" w-full h-full object-cover rounded-[12px] tab:w-full"
+                src={ezebutrs}
+                alt="ezebutrs"
+              />
+            </div>
 
             {/*right  */}
-            <div className=" space-y-[22px]">
+            <div className=" space-y-[22px] max-w-[628px]">
               <Text className="text-[54px] tab:text-[32px] text-[#FFFFFF] font-normal leading-[120%]">
                 By 2040, there will be a worldwide freshwater shortage affecting
                 the entire human race. 
@@ -74,15 +88,41 @@ const EzeBurts = () => {
               </Text>
 
               <div className="flex xl:flex-wrap  justify-between gap-5 mt-8">
-                <Button className="max-w-[206px] mob:max-w-full">
-                  Follow Eze
-                </Button>
-                <Button className="max-w-[206px] mob:max-w-full">
-                  Initiatives
-                </Button>
-                <Button className="max-w-[206px] mob:max-w-full">
-                  Contact
-                </Button>
+                <Link
+                  className="w-full max-w-[206px] mob:max-w-full"
+                  href="https://www.linkedin.com/in/ezunial-eze-burts-iii-3281b7b0/"
+                  data-aos="fade-right"
+                  data-aos-duration="900"
+                  data-aos-easing="ease-in-out"
+                >
+                  <Button className="max-w-[206px] mob:max-w-full">
+                    Follow Eze
+                  </Button>
+                </Link>
+                <Link
+                  className="w-full max-w-[206px] mob:max-w-full"
+                  href="/professional-experience"
+                  data-aos="fade-right"
+                  data-aos-duration="900"
+                  data-aos-delay="200"
+                  data-aos-easing="ease-in-out"
+                >
+                  <Button className="max-w-[206px] mob:max-w-full">
+                    Initiatives
+                  </Button>
+                </Link>
+                <Link
+                  className="w-full max-w-[206px] mob:max-w-full"
+                  href="contact@ezunile.io"
+                  data-aos="fade-right"
+                  data-aos-duration="900"
+                  data-aos-delay="400"
+                  data-aos-easing="ease-in-out"
+                >
+                  <Button className="max-w-[206px] mob:max-w-full">
+                    Contact
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
