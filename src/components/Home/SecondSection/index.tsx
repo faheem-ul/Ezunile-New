@@ -14,7 +14,11 @@ const SecondSection = () => {
         width={1440}
         height={1138}
       />
-      <div className="w-full max-w-[1440px] relative z-10 gap-5 flex flex-wrap tab:justify-center justify-between items-center">
+      <div className="w-full max-w-[1440px] relative z-10 gap-5 flex flex-wrap tab:justify-center justify-between items-center"
+         data-aos="fade-up"
+         data-aos-duration="900"
+         data-aos-easing="ease-in-out"
+      >
         <div className="flex-col  max-w-[310px]">
           <Text
             as="h1"

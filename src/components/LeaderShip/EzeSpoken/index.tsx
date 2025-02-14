@@ -22,7 +22,12 @@ const EzeSpoken = () => {
         <div className="absolute object-cover object-center w-full h-full bg-black/60">
           {" "}
         </div>
-        <div className="w-full max-w-[1290px] relative z-10 mt-[250px] mb-[70px]  mob:pt-10    mob:mt-36 mx-auto mob:px-5">
+        <div
+          className="w-full max-w-[1290px] relative z-10 mt-[250px] mb-[70px]  mob:pt-10    mob:mt-36 mx-auto mob:px-5"
+          data-aos="fade-up"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out"
+        >
           <Text
             as="h1"
             className=" text-[72px] text-center  mob:text-[54px] leading-[88px] mob:leading-[120%] mob:px-5 mb-20"
@@ -31,7 +36,13 @@ const EzeSpoken = () => {
           </Text>
 
           {/* */}
-          <div className="border border-[#00A7E1] rounded-[15px] p-[40px] tab:p-[20px] ">
+          <div
+            className="border border-[#00A7E1] rounded-[15px] p-[40px] tab:p-[20px] "
+            data-aos="fade-up"
+            data-aos-duration="900"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-out"
+          >
             <div className="flex tab:flex-wrap gap-[46px]">
               {/* left */}
               <div className="w-full max-w-[800px]">
@@ -123,7 +134,13 @@ const EzeSpoken = () => {
               </div>
             </div>
             {/* bottom */}
-            <div className="space-y-[20px] mt-[30px]">
+            <div
+              className="space-y-[20px] mt-[30px]"
+              data-aos="fade-right"
+              data-aos-duration="700"
+              data-aos-delay="100"
+              data-aos-easing="ease-in-out"
+            >
               <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
                 <Image
                   className=" w-[26px] h-[27px] mr-1"
@@ -138,18 +155,18 @@ const EzeSpoken = () => {
                   with corporate philanthropy leaders. Help non-profit leaders
                   fully unlock the “Triple Impact Corporate Growth Engine“ by
                   galvanizing
+                  <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2 mt-3">
+                    1. Corporate Donations
+                  </Text>
+                  <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2 mt-3">
+                    2. Volunteer Grants, and
+                  </Text>
+                  <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2 mt-3">
+                    3. Employee Match Donations to revitalize their service
+                    delivery models, imbed new life into their programming, and
+                    more effectively serve their stakeholders.
+                  </Text>
                 </span>
-              </Text>
-              <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
-                1. Corporate Donations
-              </Text>
-              <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
-                2. Volunteer Grants, and
-              </Text>
-              <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
-                3. Employee Match Donations to revitalize their service delivery
-                models, imbed new life into their programming, and more
-                effectively serve their stakeholders.
               </Text>
             </div>
           </div>

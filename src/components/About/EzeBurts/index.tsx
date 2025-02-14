@@ -24,16 +24,27 @@ const EzeBurts = () => {
         <div className="absolute object-cover object-center w-full h-full bg-black/60">
           {" "}
         </div>
-        <div className="w-full max-w-[1290px] relative z-10 mt-[250px] mb-[140px]  mob:pt-10    mob:mt-36 mx-auto px-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="900"
+          // data-aos-delay="600"
+          data-aos-easing="ease-in-out"
+        className="w-full max-w-[1290px] relative z-10 mt-[250px] mb-[140px]  mob:pt-10    mob:mt-36 mx-auto px-5">
           <Text
             as="h1"
+          
             className=" text-[72px] text-center  mob:text-[48px] leading-[88px] mob:leading-[120%] mob:px-5 mb-20"
           >
             About Eze Burts III
           </Text>
 
           {/*  */}
-          <div className="border border-[#00A7E1] rounded-[15px] p-[40px] tab:p-[20px] flex tab:flex-wrap gap-[46px]">
+          <div 
+            data-aos="fade-up"
+            data-aos-duration="900"
+            // data-aos-delay="600"
+            data-aos-easing="ease-in-out"
+          className="border border-[#00A7E1] rounded-[15px] p-[40px] tab:p-[20px] flex tab:flex-wrap gap-[46px]">
             <div className="w-full max-w-[800px]">
               <Image
                 className=" w-full h-full object-cover rounded-[12px] tab:w-full"
@@ -80,6 +91,9 @@ const EzeBurts = () => {
                 <Link
                   className="w-full max-w-[206px] mob:max-w-full"
                   href="https://www.linkedin.com/in/ezunial-eze-burts-iii-3281b7b0/"
+                  data-aos="fade-right"
+                  data-aos-duration="900"
+                  data-aos-easing="ease-in-out"
                 >
                   <Button className="max-w-[206px] mob:max-w-full">
                     Follow Eze
@@ -88,6 +102,10 @@ const EzeBurts = () => {
                 <Link
                   className="w-full max-w-[206px] mob:max-w-full"
                   href="/professional-experience"
+                  data-aos="fade-right"
+                  data-aos-duration="900"
+                  data-aos-delay="200"
+                  data-aos-easing="ease-in-out"
                 >
                   <Button className="max-w-[206px] mob:max-w-full">
                     Initiatives
@@ -96,6 +114,10 @@ const EzeBurts = () => {
                 <Link
                   className="w-full max-w-[206px] mob:max-w-full"
                   href="contact@ezunile.io"
+                  data-aos="fade-right"
+                  data-aos-duration="900"
+                  data-aos-delay="400"
+                  data-aos-easing="ease-in-out"
                 >
                   <Button className="max-w-[206px] mob:max-w-full">
                     Contact

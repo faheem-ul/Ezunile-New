@@ -18,6 +18,9 @@ const HeroHome = () => {
       />
       <Image
         className="absolute right-0 z-10 w-[45%] mob:hidden top-[20px]"
+        data-aos="fade-left"
+        data-aos-duration="900"
+        data-aos-easing="ease-in-out"
         src={waterimg}
         alt=""
         width={658.71}
@@ -26,7 +29,11 @@ const HeroHome = () => {
       <div className="absolute object-cover object-center w-full h-full bg-black/50">
         {" "}
       </div>
-      <div className="w-full max-w-[1290px] relative z-10 mt-20 mob:pt-10 xl:pl-5  mob:mt-36">
+      <div className="w-full max-w-[1290px] relative z-10 mt-20 mob:pt-10 xl:pl-5  mob:mt-36"
+         data-aos="fade-up"
+         data-aos-duration="900"
+         data-aos-easing="ease-in-out"
+      >
         <Text
           as="h1"
           className="max-w-[709px] text-[72px]  mob:text-[48px] leading-[88px] mob:leading-[120%] mob:px-5"

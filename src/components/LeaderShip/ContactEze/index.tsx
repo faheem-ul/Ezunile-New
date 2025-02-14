@@ -7,7 +7,7 @@ import Button from "@/components/ui/Button";
 
 const ContactEze = () => {
   return (
-    <div className="relative overflow-hidden ">
+    <div className="relative overflow-hidden " >
       <Image
         className="w-full h-full object-cover absolute z-0"
         src={bg}
@@ -16,7 +16,11 @@ const ContactEze = () => {
       <div className="absolute object-cover object-center w-full h-full bg-black/40">
         {" "}
       </div>
-      <div className="py-14 mob:px-5">
+      <div className="py-14 mob:px-5"
+         data-aos="fade-up"
+             data-aos-duration="700"
+             data-aos-delay="300"
+             data-aos-easing="ease-in-out">
         <div className="w-full border border-[#00A7E1] rounded-[15px] p-[40px] py-[60px] tab:p-[20px]   relative z-10 max-w-[1290px] mx-auto ">
           <Text
             as="h1"

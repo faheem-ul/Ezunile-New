@@ -7,7 +7,11 @@ const BioAboutMe = () => {
   return (
     <>
       <div className="py-20 px-5">
-        <div className="flex tab:flex-wrap  justify-between max-w-[1290px] mx-auto border border-[#00A7E1] rounded-[15px]  px-20 tab:px-0">
+        <div className="flex tab:flex-wrap  justify-between max-w-[1290px] mx-auto border border-[#00A7E1] rounded-[15px]  px-20 tab:px-0"
+           data-aos="fade-up"
+           data-aos-duration="900"
+           data-aos-easing="ease-in-out"
+        >
           <div className="max-w-[795px] py-20 tab:py-5 tab:px-5">
             <Text
               as="h1"
@@ -38,10 +42,20 @@ const BioAboutMe = () => {
           </div>
           <div className="border-l-[1px] tab:border-l-0 mob:border-t-[1px] border-[#00A7E1] max-w-[395px] w-full">
             <div className="py-20 px-10 tab:px-5">
-             <Link href="/professional-experience"> <Text className="text-[20px] max-w-[595px]">Initiatives</Text></Link>
+             <Link href="/professional-experience"
+                data-aos="fade-right"
+                data-aos-duration="900"
+                data-aos-delay="400"
+                data-aos-easing="ease-in-out"
+             > <Text className="text-[20px] max-w-[595px]">Initiatives</Text></Link>
               <hr className="border border-[#00A7E1] w-[133px] mt-4" />
              
-              <Link href="/bio"> <Text className="text-[20px] max-w-[595px] mt-10">Bio</Text></Link>
+              <Link href="/bio"
+                data-aos="fade-right"
+                data-aos-duration="900"
+                data-aos-delay="600"
+                data-aos-easing="ease-in-out"
+              > <Text className="text-[20px] max-w-[595px] mt-10">Bio</Text></Link>
               <hr className="border border-[#00A7E1] w-[133px] mt-4" />
             </div>
           </div>

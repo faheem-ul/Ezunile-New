@@ -13,7 +13,12 @@ import Text from "../ui/Text";
 
 const Footer = () => {
   return (
-    <div className="px-5 pb-10 pt-14">
+    <div
+      className="px-5 pb-10 pt-14"
+      data-aos="fade-up"
+      data-aos-duration="900"
+      data-aos-easing="ease-in-out"
+    >
       <div className="max-w-[1290px] flex tab:flex-wrap tab:justify-center justify-between items-center mx-auto">
         <div className="max-w-[204px] space-y-[24px]">
           <Text className="text-[15px] font-medium">
