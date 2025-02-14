@@ -5,6 +5,7 @@ import { Bebas_Neue } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import AosProvider from "@/providers/Aos";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -33,9 +34,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${bebasNeue.variable} bg-[#0d212e]`}>
-        <Navbar/>
-        {children}
-        <Footer/>
+        <AosProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </AosProvider>
       </body>
     </html>
   );

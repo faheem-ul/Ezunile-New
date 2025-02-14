@@ -24,8 +24,20 @@ const Resubale = (props: PropTypes) => {
           classname
         )}
       >
-        <Image src={image} alt="image" className="w-full max-w-[711px]" />
-        <div className="w-full max-w-[647px]">
+        <Image
+          data-aos="fade-right"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out"
+          src={image}
+          alt="image"
+          className="w-full max-w-[711px]"
+        />
+        <div
+          className="w-full max-w-[647px]"
+          data-aos="fade-left"
+          data-aos-duration="900"
+          data-aos-easing="ease-in-out"
+        >
           <Text className="text-[48px] leading-[60px] mob:text-[28px] mob:leading-[35px] font-semibold text-white mb-[36px] mob:mt-[30px]">
             {heading}
           </Text>

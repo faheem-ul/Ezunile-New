@@ -11,6 +11,9 @@ import boardfour from "@/public/images/board/board4.png";
 import boardfive from "@/public/images/board/board5.png";
 import boardsix from "@/public/images/board/board6.png";
 import boardseven from "@/public/images/board/board7.png";
+import Image from "next/image";
+
+import borderIcon from "@/public/images/board/border-icon.svg"; // Replace with actual path
 
 const communityData = [
   {
@@ -64,9 +67,9 @@ const communityData = [
 const CommunitySection: React.FC = () => {
   return (
     <div className="bg-[#0D1723]/90 px-5">
-      <div className="relative z-20 flex items-start mob:items-center mob:flex-col gap-[82px] justify-center">
+      <div className="relative z-20 flex items-start mob:items-center mob:flex-col gap-[82px] justify-center py-5">
         {/* Sticky Left Section */}
-        <div className=" w-full max-w-[567px] sticky mob:relative top-0 flex flex-col justify-center mob:items-center">
+        <div className=" w-full max-w-[567px] sticky mob:relative top-2 flex flex-col justify-center mob:items-center">
           <Text className="text-[96px] mob:text-[60px] mob:leading-[65px] font-bebasNeue font-medium leading-[100px] uppercase bg-gradient-to-t from-[#163A50] to-[#3284B6]/90 text-transparent bg-clip-text">
             Reinvesting in <br /> the Community
           </Text>
@@ -76,8 +79,28 @@ const CommunitySection: React.FC = () => {
           </Text>
         </div>
 
+        <div className="flex flex-col items-center sticky mob:relative top-0 h-[100vh] mob:hidden min-w-[34px]">
+          <div className="relative h-[100vh] flex justify-center items-start">
+            <Image
+              className="relative z-20"
+              src={borderIcon}
+              alt="Bottom icon"
+              width={34}
+              height={34}
+            />
+            <Image
+              className="bottom-0 absolute z-20"
+              src={borderIcon}
+              alt="Bottom icon"
+              width={34}
+              height={34}
+            />
+            <div className="border border-[#21587A] w-[1px] mx-auto h-full absolute top-0"></div>
+          </div>
+        </div>
+
         {/* Scrollable Right Section */}
-        <div className="overflow-y-auto w-full max-w-[690px] flex flex-col gap-[0px]">
+        <div className="overflow-y-auto w-full max-w-[690px] flex flex-col gap-[0px] ">
           {communityData.map((item, index) => (
             <CommunityCard
               key={index}
