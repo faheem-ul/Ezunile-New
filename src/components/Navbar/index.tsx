@@ -102,11 +102,11 @@ const Navbar = () => {
                         </Text>
                       </Link>
                       <Link
-                        href="/about"
+                        href="/bio"
                         className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          About Us
+                         Bio
                         </Text>
                       </Link>
                       <a
@@ -114,7 +114,7 @@ const Navbar = () => {
                         className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Professional Experience
+                        Professional Experience and Industry Expertise
                         </Text>
                       </a>
                       <a
@@ -122,7 +122,15 @@ const Navbar = () => {
                         className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Board and Advisory Comittees
+                        Boards and Advisory Committees
+                        </Text>
+                      </a>
+                      <a
+                        href="/contactus"
+                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                      >
+                        <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
+                        Leadership Growth & Professional Solutions
                         </Text>
                       </a>
 

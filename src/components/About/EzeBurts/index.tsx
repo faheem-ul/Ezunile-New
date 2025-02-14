@@ -7,6 +7,7 @@ import Button from "@/components/ui/Button";
 import bg from "@/public/images/home/herobg.png";
 import ezebutrs from "@/public/images/about/ezeburts.png";
 import design from "@/public/images/about/designbg.png";
+import Link from "next/link";
 
 const EzeBurts = () => {
   return (
@@ -33,13 +34,13 @@ const EzeBurts = () => {
 
           {/*  */}
           <div className="border border-[#00A7E1] rounded-[15px] p-[40px] tab:p-[20px] flex tab:flex-wrap gap-[46px]">
-           <div className="w-full max-w-[800px]">
-           <Image
-              className=" w-full h-full object-cover rounded-[12px] tab:w-full"
-              src={ezebutrs}
-              alt="ezebutrs"
-            />
-           </div>
+            <div className="w-full max-w-[800px]">
+              <Image
+                className=" w-full h-full object-cover rounded-[12px] tab:w-full"
+                src={ezebutrs}
+                alt="ezebutrs"
+              />
+            </div>
 
             {/*right  */}
             <div className=" space-y-[22px] max-w-[628px]">
@@ -76,15 +77,30 @@ const EzeBurts = () => {
               </Text>
 
               <div className="flex xl:flex-wrap  justify-between gap-5 mt-8">
-                <Button className="max-w-[206px] mob:max-w-full">
-                  Follow Eze
-                </Button>
-                <Button className="max-w-[206px] mob:max-w-full">
-                  Initiatives
-                </Button>
-                <Button className="max-w-[206px] mob:max-w-full">
-                  Contact
-                </Button>
+                <Link
+                  className="w-full max-w-[206px] mob:max-w-full"
+                  href="https://www.linkedin.com/in/ezunial-eze-burts-iii-3281b7b0/"
+                >
+                  <Button className="max-w-[206px] mob:max-w-full">
+                    Follow Eze
+                  </Button>
+                </Link>
+                <Link
+                  className="w-full max-w-[206px] mob:max-w-full"
+                  href="/professional-experience"
+                >
+                  <Button className="max-w-[206px] mob:max-w-full">
+                    Initiatives
+                  </Button>
+                </Link>
+                <Link
+                  className="w-full max-w-[206px] mob:max-w-full"
+                  href="contact@ezunile.io"
+                >
+                  <Button className="max-w-[206px] mob:max-w-full">
+                    Contact
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

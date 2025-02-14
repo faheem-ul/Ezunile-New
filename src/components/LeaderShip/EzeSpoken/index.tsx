@@ -22,10 +22,10 @@ const EzeSpoken = () => {
         <div className="absolute object-cover object-center w-full h-full bg-black/60">
           {" "}
         </div>
-        <div className="w-full max-w-[1290px] relative z-10 mt-[250px] mb-[70px]  mob:pt-10    mob:mt-36 mx-auto px-5">
+        <div className="w-full max-w-[1290px] relative z-10 mt-[250px] mb-[70px]  mob:pt-10    mob:mt-36 mx-auto mob:px-5">
           <Text
             as="h1"
-            className=" text-[72px] text-center  mob:text-[48px] leading-[88px] mob:leading-[120%] mob:px-5 mb-20"
+            className=" text-[72px] text-center  mob:text-[54px] leading-[88px] mob:leading-[120%] mob:px-5 mb-20"
           >
             Eze Burts
           </Text>
@@ -123,35 +123,35 @@ const EzeSpoken = () => {
               </div>
             </div>
             {/* bottom */}
-         <div className="space-y-[20px] mt-[30px]">
-         <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
-              <Image
-                className=" w-[26px] h-[27px] mr-1"
-                src={circle}
-                alt="circle"
-              />{" "}
-              <span>
-                Strategic Corporate Philanthropy and Non-profit Governance
-                Leadership: Strategic Alliance Formation and cultivation: Equip
-                leaders of nonprofit organizations to alleviate barriers and
-                cultivate meaningful, long-term, strategic partnerships with
-                corporate philanthropy leaders. Help non-profit leaders fully
-                unlock the “Triple Impact Corporate Growth Engine“ by
-                galvanizing
-              </span>
-            </Text>
-            <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
-              1. Corporate Donations
-            </Text>
-            <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
-              2. Volunteer Grants, and
-            </Text>
-            <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
-              3. Employee Match Donations to revitalize their service delivery
-              models, imbed new life into their programming, and more
-              effectively serve their stakeholders.
-            </Text>
-         </div>
+            <div className="space-y-[20px] mt-[30px]">
+              <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
+                <Image
+                  className=" w-[26px] h-[27px] mr-1"
+                  src={circle}
+                  alt="circle"
+                />{" "}
+                <span>
+                  Strategic Corporate Philanthropy and Non-profit Governance
+                  Leadership: Strategic Alliance Formation and cultivation:
+                  Equip leaders of nonprofit organizations to alleviate barriers
+                  and cultivate meaningful, long-term, strategic partnerships
+                  with corporate philanthropy leaders. Help non-profit leaders
+                  fully unlock the “Triple Impact Corporate Growth Engine“ by
+                  galvanizing
+                </span>
+              </Text>
+              <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
+                1. Corporate Donations
+              </Text>
+              <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
+                2. Volunteer Grants, and
+              </Text>
+              <Text className="text-[18px] tab:text-[16px] text-[#FFFFFF] font-normal leading-[26px] flex gap-2">
+                3. Employee Match Donations to revitalize their service delivery
+                models, imbed new life into their programming, and more
+                effectively serve their stakeholders.
+              </Text>
+            </div>
           </div>
         </div>
       </div>
