@@ -113,7 +113,7 @@ const EzeBurts = () => {
                 </Link>
                 <Link
                   className="w-full max-w-[206px] mob:max-w-full"
-                  href="contact@ezunile.io"
+                  href="mailto:contact@ezunile.io"
                   data-aos="fade-right"
                   data-aos-duration="900"
                   data-aos-delay="400"
