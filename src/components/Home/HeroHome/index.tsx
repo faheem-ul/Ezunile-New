@@ -5,6 +5,7 @@ import bg from "@/public/images/home/herobg.png";
 import waterimg from "@/public/images/home/water.png";
 import Text from "@/components/ui/Text";
 import Button from "@/components/ui/Button";
+import Link from "next/link";
 
 const HeroHome = () => {
   return (
@@ -29,10 +30,11 @@ const HeroHome = () => {
       <div className="absolute object-cover object-center w-full h-full bg-black/50">
         {" "}
       </div>
-      <div className="w-full max-w-[1290px] relative z-10 mt-20 mob:pt-10 xl:pl-5  mob:mt-36"
-         data-aos="fade-up"
-         data-aos-duration="900"
-         data-aos-easing="ease-in-out"
+      <div
+        className="w-full max-w-[1290px] relative z-10 mt-20 mob:pt-10   mob:mt-36"
+        data-aos="fade-up"
+        data-aos-duration="900"
+        data-aos-easing="ease-in-out"
       >
         <Text
           as="h1"
@@ -40,7 +42,11 @@ const HeroHome = () => {
         >
           My purpose in life is alleviating global water scarcity.
         </Text>
-        <Button className="max-w-[216px] mob:mx-5 mt-[50px]">Learn More</Button>
+        <Link className="w-full max-w-[216px]" href="/bio">
+          <Button className="max-w-[216px] mob:mx-5 mt-[50px]">
+            Learn More
+          </Button>
+        </Link>
         <Image
           className="z-10 w-full mt-[-50px] hidden mob:block"
           src={waterimg}
