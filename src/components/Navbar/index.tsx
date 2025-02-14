@@ -99,11 +99,12 @@ const Navbar = () => {
               </div>
               <div className="relative z-40">
                 <Drawer isOpen={isOpen} onClose={onClose}>
-                  <div className="flex items-center h-full w-full ">
-                    <ul className="font-normal  w-full  mob:left-0 mob:w-full z-50 flex flex-col py-4 md:p-0 mt-4 gap-[0px]  rtl:space-x-reverse md:mt-0 ">
+                  <div className="flex items-center h-full w-full">
+                    <ul className="font-normal w-full mob:left-0 mob:w-full z-50 flex flex-col py-4 md:p-0 mt-4 gap-[0px] rtl:space-x-reverse md:mt-0">
                       <Link
                         href="/"
-                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                        className="block text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]"
+                        onClick={() => onClose()} // Close the drawer on link click
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                           Home
@@ -111,53 +112,40 @@ const Navbar = () => {
                       </Link>
                       <Link
                         href="/bio"
-                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                        className="block text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]"
+                        onClick={() => onClose()} // Close the drawer on link click
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                           Bio
                         </Text>
                       </Link>
-                      <a
+                      <Link
                         href="/professional-experience"
-                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                        className="block text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]"
+                        onClick={() => onClose()} // Close the drawer on link click
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                           Professional Experience and Industry Expertise
                         </Text>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="/boards-and-advisory-committees"
-                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                        className="block text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]"
+                        onClick={() => onClose()} // Close the drawer on link click
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                           Boards and Advisory Committees
                         </Text>
-                      </a>
-                      <a
+                      </Link>
+                      <Link
                         href="/leadership-growth-professional-solutions"
-                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
+                        className="block text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]"
+                        onClick={() => onClose()} // Close the drawer on link click
                       >
                         <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
                           Leadership Growth & Professional Solutions
                         </Text>
-                      </a>
-
-                      {/* <a
-                        href=""
-                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                      >
-                        <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Join
-                        </Text>
-                      </a> */}
-                      {/* <a
-                        href=""
-                        className="block  text-[20px] font-inter font-medium leading-[25.5px] text-[#22282F]  "
-                      >
-                        <Text className="flex pl-16 font-bold justify-start py-[15px] list-items">
-                          Connect
-                        </Text>
-                      </a> */}
+                      </Link>
 
                       <div
                         className={cn(
@@ -169,14 +157,18 @@ const Navbar = () => {
                         <a
                           href="http://pcols.com/!NDI2"
                           className="text-white text-[14px] font-medium font-inter"
-                          onClick={(e) => e.stopPropagation()}
+                          onClick={(e) => {
+                            e.stopPropagation(); // Prevent drawer close on this click
+                          }}
                         >
                           Waldorf
                         </a>
                         <a
                           href="http://pcols.com/!Nzgx"
                           className="text-white mt-2 text-[14px] font-medium font-inter"
-                          onClick={(e) => e.stopPropagation()}
+                          onClick={(e) => {
+                            e.stopPropagation(); // Prevent drawer close on this click
+                          }}
                         >
                           Takoma Park
                         </a>
